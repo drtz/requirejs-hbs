@@ -43,7 +43,7 @@ define(["handlebars-compiler"], function (Handlebars) {
       // Write out precompiled version of the template function as AMD
       // definition.
       write(
-        "define('hbs!" + name + "', ['handlebars'], function(Handlebars){ \n" +
+        "define('" + name + templateExtension + "', ['handlebars'], function(Handlebars){ \n" +
           "Handlebars = Handlebars || this.Handlebars;\n" +
           "return Handlebars.template(" + compiled.toString() + ");\n" +
         "});\n"

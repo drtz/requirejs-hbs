@@ -9,6 +9,11 @@ define(["handlebars"], function (Handlebars) {
     // http://requirejs.org/docs/plugins.html#apiload
     load: function (name, parentRequire, onload, config) {
 
+      //if (parentRequire.defined(name + templateExtension)) {
+      if (!Handlebars.compile) {
+        return parentRequire([name + templateExtension], onload);
+      }
+
       // Get the template extension.
       var ext = (config.hbs && config.hbs.templateExtension ? config.hbs.templateExtension : templateExtension);
 
