@@ -1,9 +1,10 @@
 {
-  "name": "requirejs-hbs",
-  "version": "0.1.1",
-  "homepage": "https://github.com/epeli/requirejs-hbs",
+  "name": "drtz-requirejs-hbs",
+  "version": "0.2.0",
+  "homepage": "https://github.com/drtz/requirejs-hbs",
   "authors": [
-    "Esa-Matti Suuronen <esa-matti@suuronen.org>"
+    "Esa-Matti Suuronen <esa-matti@suuronen.org>",
+    "Danny Raetzsch <danny04@gmail.com>"
   ],
   "description": "Simple precompiling Handlebars plugin for RequireJS",
   "main": ["hbs.js", "hbs-builder.js"],
